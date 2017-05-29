@@ -1,0 +1,18 @@
+append  <source> <destination>  Appends contents of <source> to <destination>
+buse    <path>                  Displays block usage information
+cat     <path>                  Dumps contents of <file>
+cd      <directory>             Changes current working directory to <directory>
+copy    <source> <destination>  Copies <source> to <destination>
+create  <path>                  Creates a file and stores contents in <path>
+format                          Formats disk
+fsinfo                          Displays disk usage information
+help                            Prints this help screen
+import  <real-file> <file>      Copies <real-file> to <file>
+ls      [<path>]                Lists contents of <path>
+mkdir   <directory>             Creates a new directory called <directory>
+quit                            Quit OSD Disk Tool
+read                            Reads filesystem from real-files
+rename  <old-file> <new-file>   Renames <old-file> to <new-file>
+rm      <file>                  Removes <file>
+pwd                             Get current working directory
+save                            Saves filesystem to real-files
