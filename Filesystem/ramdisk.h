@@ -5,14 +5,14 @@
 class RamDisk : public BlockDevice
 {
 public:
-	RamDisk(int blockSize, int blockCount);
-	~RamDisk();
+    RamDisk(int blockSize, int blockCount);
+    ~RamDisk();
 
-	void write(int index, const char* data) override;
-	void read(int index, char* buffer) const override;
+    void write(int index, const char* data) override;
+    void read(int index, char* buffer) const override;
 
 private:
-	char* storage_;
+    char* storage_;
 };
 
 #endif

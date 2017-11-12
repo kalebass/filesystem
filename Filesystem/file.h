@@ -7,30 +7,30 @@
 class File
 {
 public:
-	File(BlockDevice&, int indexBlock, int size);
-	virtual ~File();
+    File(BlockDevice&, int indexBlock, int size);
+    virtual ~File();
 
-	void write(std::istream&);
-	void read(std::ostream&);
-	void erase();
-	virtual void del();
+    void write(std::istream&);
+    void read(std::ostream&);
+    void erase();
+    virtual void del();
 
-	virtual void blockUsage(std::ostream&);
+    virtual void blockUsage(std::ostream&);
 
-	int size() const;
-	void setSize(int);
-	int indexBlock() const;
+    int size() const;
+    void setSize(int);
+    int indexBlock() const;
 
 protected:
-	BlockDevice& disk;
+    BlockDevice& disk;
 
-	int indexBlock_;
-	int size_;
-	int bsize_;
+    int indexBlock_;
+    int size_;
+    int bsize_;
 
-	char* indexbuffer_;
+    char* indexbuffer_;
 
-	int& block(int segment);
+    int& block(int segment);
 };
 
 #endif
